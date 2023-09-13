@@ -14,8 +14,9 @@
 
 
 function playRound(playerSelection,computerSelection ) {
-
-
+    console.log("the player chose " + playerSelection );
+    console.log("the computer chose " + computerSelection);
+    
     if (playerSelection  === computerSelection) {
         console.log("it's a draw");
     } 
@@ -52,6 +53,9 @@ else if (playerSelection === "SCISSOR" && computerSelection === "ROCK" ) {
     console.log("You LOSE SCISSOR Lose to ROCK");
 }
 
+else {
+    console.log("Please type Rock/Paper or Scissor only");
+}
 
 
 }
